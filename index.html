@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Sistema de Estoque</title>
+</head>
+<body>
+    <div class="container">
+        <div class="cabecalho">
+            <a href="login.html" class="link-voltar">Voltar</a>
+            <h1>Sistema de Estoque</h1>
+        </div>
+        <hr>
+
+        <div class="conteudo">
+            <div class="adicionar-inventario">
+                <form>
+                    <p>Digite o item que vai ser adicionado no estoque:</p>
+                    <label for="item">Item:</label>
+                    <input type="text" id="item" name="item" placeholder="Item">
+                </form>
+                <form>
+                    <p>Digite o preço do produto:</p>
+                    <label for="preco">Preço:</label>
+                    <input type="text" id="preco" name="preco" placeholder="Preço">
+                </form>
+                <form>
+                    <p>Digite a quantidade do produto:</p>
+                    <label for="quantidade">Quantidade:</label>
+                    <input type="text" id="quantidade" name="quantidade" placeholder="Quantidade">
+                    
+                </form>
+                <form>
+                    <p>Digite o ID do produto</p>
+                    <label for="id">ID:</label>
+                    <input type="text" id="id" name="id" placeholder="ID">
+                    
+                </form>
+            </div>
+
+            <div class="remover-inventario">
+                <p>Qual item deseja dar baixa do estoque:</p>
+                <form>
+                    <p>Digite o ID do item que vai ser retirado no estoque:</p>
+                    <label for="remove-id">ID:</label>
+                    <input type="text" id="remove-id" name="remove-id" placeholder="ID">
+                </form>
+                <form>
+                    <p>Digite a quantidade do produto:</p>
+                    <label for="quantidade">Quantidade:</label>
+                    <input type="text" id="quantidade" name="quantidade" placeholder="Quantidade">
+                    
+                </form>
+            </div>
+        </div>
+
+        <div class="container-botoes">
+            <button type="button" class="botao-adicionar">Adicionar</button>
+            <button type="button" class="botao-remover">Remover</button>
+        </div>
+        <hr>
+
+        <div class="inventario">
+            <h2>Produtos</h2>
+            <table border="1">
+                <tr>
+                    <th>Nome</th>
+                    <th>Preço</th>
+                    <th>Quantidade</th>
+                    <th>ID</th>
+                </tr>
+                <tr>
+                    <td>Vassoura</td>
+                    <td>13,50</td>
+                    <td>40</td>
+                    <td>123</td>
+                </tr>
+                <tr>
+                    <td>Rodo</td>
+                    <td>14,50</td>
+                    <td>30</td>
+                    <td>456</td>
+                </tr>
+                <tr>
+                    <td>Saco de lixo</td>
+                    <td>5,60</td>
+                    <td>30</td>
+                    <td>789</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

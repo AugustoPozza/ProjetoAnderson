@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Login</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style1.css'>
+</head>
+<body>
+    <div class="cor">
+    <div class="cabecalho">
+    <header>    
+        <ul>
+            <li ><a href="index.html" class="sem-underline">Sistema de estoque</a></li>
+            <li><a href="itens.html" class="sem-underline">Cadastro de Itens</a></li>
+            <li><a href="funcionarios.html" class="sem-underline">Cadastro de Funcionários</a></li>
+            <li>Contas</li>
+        </ul>
+    </header>
+    </div>
+    </div> 
+    <hr> 
+    <div class="abaixar">
+        
+        <div class="login-container">
+            <h2>SportMax</h2>
+            <div class="input-group">
+                <input type="text" placeholder="Login" id="login">
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="Senha" id="senha">
+            </div>
+            <button class="btn-login" onclick="validarLogin()">Entrar</button>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    function validarLogin() {
+        // Obter os valores de login e senha
+        var login = document.getElementById('login').value;
+        var senha = document.getElementById('senha').value;
+
+        // Verificar as credenciais (substitua isso com suas próprias verificações)
+        if (login === 'augusto' && senha === '123') {
+            window.location.href = 'index.html'
+            
+        } else {
+            alert('Login falhou. Verifique suas credenciais.');
+            // Limpar os campos de login e senha (opcional)
+            document.getElementById('login').value = '';
+            document.getElementById('senha').value = '';
+        }
+    }
+</script>

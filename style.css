@@ -1,0 +1,76 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://images.saymedia-content.com/.image/t_share/MTkzOTUzODU0MDkyODc5MzY1/particlesjs-examples.gif') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    border: none;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.cabecalho {
+    text-align: center;
+}
+
+.link-voltar {
+    text-decoration: none;
+    color: black;
+    float: left;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.adicionar-inventario,
+.remover-inventario {
+    width: 45%;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    margin: 10px 0;
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.botao-adicionar {
+    background-image: linear-gradient(to bottom, rgb(52, 181, 52), #0dff00);
+}
+
+.botao-remover {
+    background-image: linear-gradient(to bottom, #db9731, #ff0000);
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    background-color: aliceblue;
+    text-align: center;
+    padding: 5px;
+}
+
+.inventario {
+    text-align: center;
+}
